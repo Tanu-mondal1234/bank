@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo</title>
+<link rel="stylesheet" href="logo.css">
+<style>
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size:50px;
+    color: black;
+    z-index: 1; 
+  }
+
+.transparent-btn {
+    background-color: transparent;
+    border: 1.5px solid #ffffff; /* Border color */
+    color: brown; /* Text color */
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    border-radius: 50px;
+  }
+
+.transparent-btn:hover {
+    background-color:; /* Hover background color */
+    color: black; /* Hover text color */
+    border-color: black; /* Hover border color */
+  }
+</style>
+</head>
+<body>
+<div id="video-background">
+  <video autoplay muted loop>
+    <source src="logo.mp4" type="video/mp4">
+  </video>
+</div>
+<div class="content">
+<button class="transparent-btn"><a href="index.html" style="text-decoration:none; color:inherit;">Lets_Start🫡</a></button>
+</div>
+</body>
+</html>
